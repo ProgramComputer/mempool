@@ -49,7 +49,6 @@ JsonRPC.prototype.call = function (method, params) {
       agent: false,
       rejectUnauthorized: this.opts.ssl && this.opts.sslStrict !== false
     }
-    console.log(this.opts.port)
     if (this.opts.ssl && this.opts.sslCa) {
     // @ts-ignore 
       requestOptions.ca = this.opts.sslCa
