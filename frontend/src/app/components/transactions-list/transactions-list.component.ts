@@ -11,6 +11,7 @@ import { BlockExtended } from '../../interfaces/node-api.interface';
 import { ApiService } from '../../services/api.service';
 import { PriceService } from '../../services/price.service';
 
+
 @Component({
   selector: 'app-transactions-list',
   templateUrl: './transactions-list.component.html',
@@ -184,6 +185,8 @@ export class TransactionsListComponent implements OnInit, OnChanges {
   onScroll(): void {
     this.loadMore.emit();
   }
+
+
 
   haveBlindedOutputValues(tx: Transaction): boolean {
     return tx.vout.some((v: any) => v.value === undefined);

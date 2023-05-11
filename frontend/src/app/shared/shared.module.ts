@@ -36,6 +36,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LanguageSelectorComponent } from '../components/language-selector/language-selector.component';
 import { FiatSelectorComponent } from '../components/fiat-selector/fiat-selector.component';
 import { ColoredPriceDirective } from './directives/colored-price.directive';
+import { SelectAllTextDirective } from './directives/select-all-text.directive';
+
 import { NoSanitizePipe } from './pipes/no-sanitize.pipe';
 import { MempoolBlocksComponent } from '../components/mempool-blocks/mempool-blocks.component';
 import { BlockchainBlocksComponent } from '../components/blockchain-blocks/blockchain-blocks.component';
@@ -123,6 +125,7 @@ import { ClockMempoolComponent } from '../components/clock/clock-mempool.compone
     FeeRoundingPipe,
     FiatCurrencyPipe,
     ColoredPriceDirective,
+    SelectAllTextDirective,
     BlockchainComponent,
     MempoolBlocksComponent,
     BlockchainBlocksComponent,
@@ -242,6 +245,7 @@ import { ClockMempoolComponent } from '../components/clock/clock-mempool.compone
     Decimal2HexPipe,
     FeeRoundingPipe,
     ColoredPriceDirective,
+    SelectAllTextDirective,
     NoSanitizePipe,
     BlockchainComponent,
     MempoolBlocksComponent,
