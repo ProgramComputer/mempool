@@ -10,4 +10,4 @@ const nodeRpcCredentials: BitcoinRpcCredentials = {
   timeout: config.CORE_RPC.TIMEOUT,
 };
 
-export default new bitcoin.Client(/*nodeRpcCredentials*/);
+export default new bitcoin.Client(nodeRpcCredentials);
