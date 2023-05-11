@@ -115,7 +115,7 @@ JsonRPC.prototype.call = function (method, params) {
         } catch (e) {
             reject(response)
           if (response.statusCode !== 200) {
-            err = new Error('Invalid yoyo params, response status code: ' + response.statusCode)
+            err = new Error('Invalid params, response status code: ' + response.statusCode)
             err.code = -32602
             reject(err)
           } else {
