@@ -113,7 +113,7 @@ JsonRPC.prototype.call = function (method, params) {
         try {
           var decoded = JSON.parse(buffer)
         } catch (e) {
-            reject(response)
+            console.log(e)
           if (response.statusCode !== 200) {
             err = new Error('Invalid params, response status code: ' + response.statusCode)
             err.code = -32602
