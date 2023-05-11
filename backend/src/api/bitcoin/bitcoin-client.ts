@@ -8,6 +8,7 @@ const nodeRpcCredentials: BitcoinRpcCredentials = {
   user: config.CORE_RPC.USERNAME,
   pass: config.CORE_RPC.PASSWORD,
   timeout: config.CORE_RPC.TIMEOUT,
+  ssl: config.CORE_RPC.SSL
 };
 
 export default new bitcoin.Client(nodeRpcCredentials);

@@ -54,6 +54,7 @@ describe('Mempool Backend Config', () => {
         PORT: 8332,
         USERNAME: 'mempool',
         PASSWORD: 'mempool',
+        "SSL": true,
         TIMEOUT: 60000
       });
 
@@ -62,6 +63,7 @@ describe('Mempool Backend Config', () => {
         PORT: 8332,
         USERNAME: 'mempool',
         PASSWORD: 'mempool',
+        "SSL": false,
         TIMEOUT: 60000
       });
 

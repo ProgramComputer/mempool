@@ -69,6 +69,7 @@ interface IConfig {
     PORT: number;
     USERNAME: string;
     PASSWORD: string;
+    SSL: boolean;
     TIMEOUT: number;
   };
   SECOND_CORE_RPC: {
@@ -76,6 +77,7 @@ interface IConfig {
     PORT: number;
     USERNAME: string;
     PASSWORD: string;
+    SSL: boolean;
     TIMEOUT: number;
   };
   DATABASE: {
@@ -179,6 +181,7 @@ const defaults: IConfig = {
     'PORT': 8332,
     'USERNAME': 'mempool',
     'PASSWORD': 'mempool',
+    "SSL": true,
     'TIMEOUT': 60000,
   },
   'SECOND_CORE_RPC': {
@@ -186,6 +189,7 @@ const defaults: IConfig = {
     'PORT': 8332,
     'USERNAME': 'mempool',
     'PASSWORD': 'mempool',
+    "SSL": false,
     'TIMEOUT': 60000,
   },
   'DATABASE': {
