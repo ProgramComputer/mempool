@@ -5,8 +5,8 @@ var JsonRPC = function (opts) {
   // @ts-ignore
   this.opts = opts || {}
   // @ts-ignore
-  console.log("LOOK HERE" + this.opts.ssl);
   this.http = this.opts.ssl ? https : http
+
 }
 
 JsonRPC.prototype.call = function (method, params) {
